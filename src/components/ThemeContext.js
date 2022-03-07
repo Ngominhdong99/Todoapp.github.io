@@ -3,7 +3,6 @@ import { useState, createContext } from "react";
 const ThemeContext = createContext({theme: 'dark-mode', icon: 'fas fa-moon', toggleTheme: () => null});
 
 function ThemeProvider( {children} ) {
-    const instance = 1;
     const [theme, setTheme] = useState('dark-mode');
     const [icon, setIcon] = useState('fas fa-moon');
     const toggleTheme = () => {
